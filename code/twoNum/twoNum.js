@@ -23,14 +23,12 @@ var twoSum = function(nums, target) {
   var twoSum = function(nums, target) {
   var resuts,num,diff = [];
   for (var i = 0, n = nums.length; i < n; i++) {
-      //var index = nums.indexOf(target - nums[i]);
-      //index > -1 && (resuts = [index, i])
       num = nums[i];
       var diffNum = diff[num];
       (diffNum || diffNum == 0)?(resuts = [diffNum, i]):(diff[target - num] = i)
   }
   return resuts;
-  }
+  } 
 
   //方法三
   function twoSum(nums,target){
