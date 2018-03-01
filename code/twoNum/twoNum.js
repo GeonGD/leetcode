@@ -31,3 +31,19 @@ var twoSum = function(nums, target) {
   }
   return resuts;
   }
+
+  //方法三
+  function twoSum(nums,target){
+  	let arr=nums.sort((a,b)=>{return a-b})
+  	let n=nums.length
+  	for(i = 0, j = n-1; i < j ; )
+	{
+		if(arr[i] + arr[j] == target)
+			return ( i , j );
+		else if(arr[i] + arr[j] < target)
+			i++;
+		else
+			j--;
+	}
+	return ( -1 , -1 );
+  }
