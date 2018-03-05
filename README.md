@@ -1,59 +1,5 @@
 # leetcode
 
-<<<<<<< HEAD
 #####  https://leetcodechina.com
 
 # 万一有一天，这些题就刷完了~
-=======
-## 01 两数之和
-
-```js
-    // 方法1
-    /**
-     * @param {number[]} nums
-     * @param {number} target
-     * @return {number[]}
-     */
-
-    var twoSum = function(nums, target) {
-        var a = [];
-        for (var i = 0, len = nums.length; i < len; i++) {
-        var tmp = target - nums[i];
-        if (a[tmp] !== undefined) return [a[tmp], i];
-        a[nums[i]] = i;
-        }
-    };
-  
-    // 方s法2
-    /**
-     * @param {number[]} nums
-     * @param {number} target
-     * @return {number[]}
-     */
-    var twoSum = function(nums, target) {
-    var resuts,num,diff = [];
-    for (var i = 0, n = nums.length; i < n; i++) {
-        num = nums[i];
-        var diffNum = diff[num];
-        (diffNum || diffNum == 0)?(resuts = [diffNum, i]):(diff[target - num] = i)
-    }
-    return resuts;
-    } 
-
-    //方法三
-    function twoSum(nums,target){
-        let arr=nums.sort((a,b)=>{return a-b})
-        let n=nums.length
-        for(i = 0, j = n-1; i < j ; )
-        {
-            if(arr[i] + arr[j] == target)
-                return ( i , j );
-            else if (arr[i] + arr[j] < target)
-                i++;
-            else
-                j--;
-        }
-        return ( -1 , -1 );
-    } 
- ```
->>>>>>> 10300a79123b4575b5db37da518c1b28cd29570f
