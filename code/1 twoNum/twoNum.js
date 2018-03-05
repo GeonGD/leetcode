@@ -38,7 +38,7 @@ var twoSum = function(nums, target) {
 	{
 		if(arr[i] + arr[j] == target)
 			return ( i , j );
-		else if(arr[i] + arr[j] < target)
+		else if (arr[i] + arr[j] < target)
 			i++;
 		else
 			j--;
