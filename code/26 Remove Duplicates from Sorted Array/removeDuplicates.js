@@ -11,6 +11,7 @@
  * @author HeHuan
  * @method 递归
  */
+// 第一种方法
 var removeDuplicates = function (nums) {
 	for (let i = 0; i < nums.length; i++) {
 		if (nums[i] == nums[i + 1]) {
@@ -18,5 +19,11 @@ var removeDuplicates = function (nums) {
 			removeDuplicates(nums)
 		}
 	}
+	return nums.length
+};
+
+// 第二种方法，亲测有效，但是网页不通过
+var removeDuplicates = function (nums) {
+	nums = nums.filter((v, i) => v !== nums[i + 1])
 	return nums.length
 };
