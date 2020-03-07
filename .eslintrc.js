@@ -8,7 +8,10 @@ module.exports = {
     "extends": "eslint:recommended",
     "parserOptions": {
         "sourceType": "module",
-        "ecmaVersion": [6,7,8]
+        "ecmaVersion": [6],
+        "ecmaFeatures": {
+            "modules": true,
+        }
     },
     "rules": {
         "no-alert": 0,//禁止使用alert confirm prompt
@@ -95,7 +98,7 @@ module.exports = {
         "no-trailing-spaces": 1,//一行结束后面不要有空格
         "no-this-before-super": 0,//在调用super()之前不能使用this或super
         "no-throw-literal": 2,//禁止抛出字面量错误 throw "error";
-        "no-undef": 1,//不能有未定义的变量
+        "no-undef": 0,//不能有未定义的变量
         "no-undef-init": 2,//变量初始化时不能直接给它赋值为undefined
         "no-undefined": 2,//不能使用undefined
         "no-unexpected-multiline": 2,//避免多行表达式
@@ -160,7 +163,7 @@ module.exports = {
         "prefer-const": 0,//首选const
         "prefer-spread": 0,//首选展开运算
         "prefer-reflect": 0,//首选Reflect的方法
-        "quotes": [1, "single"],//引号类型 `` "" ''
+        "quotes": [2, "double"],//引号类型 `` "" ''
         "quote-props":[2, "always"],//对象字面量中的属性名是否强制双引号
         "radix": 2,//parseInt必须指定第二个参数
         "id-match": 0,//命名检测
