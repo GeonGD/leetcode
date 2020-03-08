@@ -163,7 +163,7 @@ module.exports = {
         "prefer-reflect": 0,//首选Reflect的方法
         "quotes": [2, "double"],//引号类型 `` "" ''
         "quote-props":[2, "always"],//对象字面量中的属性名是否强制双引号
-        "radix": 2,//parseInt必须指定第二个参数
+        "radix": 0,//parseInt必须指定第二个参数
         "id-match": 0,//命名检测
         "require-yield": 0,//生成器函数必须有yield
         "semi": [2, "always"],//语句强制分号结尾
