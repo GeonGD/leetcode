@@ -1,6 +1,5 @@
 /**
  * 459  重复的子字符串
- * 
  * @param {string} s
  * @return {boolean}
  */
