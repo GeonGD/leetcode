@@ -11,10 +11,12 @@ const addTwoNumbers = (l1, l2) => {
     let arr2 = [];
     while (l1) {
         arr1.push(l1.val);
+        // eslint-disable-next-line no-param-reassign
         l1 = l1.next;
     }
     while (l2) {
         arr2.push(l2.val);
+        // eslint-disable-next-line no-param-reassign
         l2 = l2.next;
     }
     let res = [0];
